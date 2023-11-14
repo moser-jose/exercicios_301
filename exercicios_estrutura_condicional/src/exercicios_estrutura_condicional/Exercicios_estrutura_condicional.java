@@ -8,6 +8,8 @@ public class Exercicios_estrutura_condicional {
         
         // Exercícios usando estruturas condicionais
         
+        // if como Estrutura condicional.
+        
         /*
             1. Criar um programa em java que verifique ou mostre se um número é par ou impar;
             
@@ -16,6 +18,12 @@ public class Exercicios_estrutura_condicional {
         */
         
         // 1.
+        
+        
+           
+        
+        
+        
         
             int n=3;
 

@@ -5,6 +5,8 @@
  */
 package exercicio_2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author mosmmy
@@ -22,6 +24,8 @@ public class Exercicio_2 {
         // Desenvolvendo Software em Java, Russel Winder & Graham Roberts, Pags 3 - 133 
         
        // Estruturas Condicionais
+       
+        
        
             //if
                  // Operadores Aritmetricos
@@ -53,7 +57,7 @@ public class Exercicio_2 {
                     // ~V = F
                     // ~F = V
             
-            String a="_odio", b="odio_";
+            String a="_odio", b="_odio";
             
             // Primeira Forma de Utilização do if
             
@@ -71,7 +75,7 @@ public class Exercicio_2 {
                 }
                 
             // Terceira Forma de Utilização do if
-                int n1=1000, n2=100;
+                int n1=1000, n2=1000;
                 
                 if(n1 == n2){
                     System.out.println("são iguais");
@@ -82,7 +86,11 @@ public class Exercicio_2 {
                 else{
                     System.out.println("n2 é maior");
                 }
+                boolean fg=false;
                 
+                fg = (n1==n2) ? true :false;
+                
+                System.out.println(fg);
                 
                 
                 
@@ -93,6 +101,40 @@ public class Exercicio_2 {
                 }
                 else{
                    System.out.println("A tua Ficha não entrou. Tente outra vez"); 
+                }
+                
+                
+                
+                Scanner s= new Scanner(System.in);
+                
+                double peso, altura, imc;
+                
+                System.out.println("Introduza o peso");
+                peso=s.nextDouble();
+                
+                System.out.println("Introduza a altura");
+                altura=s.nextDouble();
+                
+                imc= peso / (altura * altura);
+                
+                /*
+                    Abaixo de 18,5 Abaixo do peso
+                    • Entre 18,5 e 25 Peso normal
+                    • de 25 a 30 Acima do peso
+                    • Acima dos 30 Obeso
+                */
+                if(imc < 18.5){
+                       System.out.println(imc+" - Abaixo do Peso");
+                       
+                }
+                else if((imc >= 18.5) && (imc <= 24)){
+                    System.out.println(imc+" - Peso normal");
+                }
+                else if((imc >= 25) && (imc <= 30)){
+                    System.out.println(imc+" - Acima do Peso");
+                }
+                else{
+                    System.out.println(imc+" - Obeso");
                 }
     }
     
